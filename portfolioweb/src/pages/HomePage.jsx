@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
 import SkillsList from "../components/SkillsList";
@@ -46,8 +47,9 @@ const HomePage = () => {
     },
   ];
 
+
   return (
-    <div className="flex-grow bg-gray-100">
+    <div className="flex-grow ">
       {/* <section className="py-12 px-4 text-center">
       <h1 className="text-5xl font-bold mb-4 hover:text-blue-600 transition duration-300">
         Bienvenido a mi portfolio
