@@ -1,7 +1,7 @@
 // Sidebar.js
 import React from 'react';
 
-const Sidebar = ({onPanelClick}) => {
+const Sidebar = ({onPanelClick, onCreateProjectClick }) => {
 
   return (
     <div className="fixed left-0 top-0 h-full w-64 bg-gray-800 overflow-y-auto z-50 mt-10">
@@ -23,6 +23,10 @@ const Sidebar = ({onPanelClick}) => {
           </li>
           {/* Agregar más elementos de menú según sea necesario */}
         </ul>
+        {/* Botón para crear proyecto */}
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 mx-4" onClick={onCreateProjectClick}>
+        Crear Proyecto
+      </button>
       </div>
     </div>
   );
