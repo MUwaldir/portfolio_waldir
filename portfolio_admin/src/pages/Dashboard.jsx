@@ -35,13 +35,13 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="flex mt-8">
+    <div className=" mt-8 ">
       <Sidebar
        onCreateProjectClick={handleCreateProjectClick}
         onPanelClick={setPanel}
       />
       {panel === 1 && (
-        <div className="bg-gray-100 flex-1 p-6 ml-64">
+        <div className="bg-gray-100 flex-1 pl-64  p-6  ">
           <h1 className="text-2xl font-semibold mb-4">Dashboard</h1>
           <div className="bg-white rounded-lg p-6 shadow-md mb-6">
             <h2 className="text-lg font-semibold mb-4">Resumen de Proyectos</h2>
@@ -53,7 +53,7 @@ const Dashboard = () => {
               {projects.map((project) => (
                 <li key={project.id} className="mb-4">
                   <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <p>{project.description}</p>
+                  <p className="">{project.description}</p>
                 </li>
               ))}
             </ul>
@@ -61,7 +61,7 @@ const Dashboard = () => {
         </div>
       )}
       {panel === 2 && (
-        <div className="bg-gray-100 flex-1 p-6 ml-64">
+        <div className="bg-gray-100 flex-1 p-6 pl-64">
           <Proyectos />
         </div>
       )}

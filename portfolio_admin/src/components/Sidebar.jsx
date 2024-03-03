@@ -15,12 +15,12 @@ const Sidebar = ({onPanelClick, onCreateProjectClick }) => {
           <li className="mb-4">
             <a onClick={() => onPanelClick(2)}  className="text-white hover:bg-gray-700 py-2 px-4 block transition duration-300 cursor-pointer">Proyectos</a>
           </li>
-          <li className="mb-4">
+          {/* <li className="mb-4">
             <a onClick={ () => onPanelClick(3)}  className="text-white hover:bg-gray-700 py-2 px-4 block transition duration-300 cursor-pointer">Habilidades</a>
           </li>
           <li className="mb-4">
             <a onClick={ () => onPanelClick(4)}  className="text-white hover:bg-gray-700 py-2 px-4 block transition duration-300 cursor-pointer">Imágenes de Proyecto</a>
-          </li>
+          </li> */}
           {/* Agregar más elementos de menú según sea necesario */}
         </ul>
         {/* Botón para crear proyecto */}
